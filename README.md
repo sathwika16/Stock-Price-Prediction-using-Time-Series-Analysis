@@ -1,63 +1,63 @@
-Project Description
-This project implements a deep learning approach to predict stock prices using historical financial data obtained from Yahoo Finance. The focus is on Apple Inc. (AAPL) stock, and the model is built using a Long Short-Term Memory (LSTM) neural network, a type of recurrent neural network (RNN) particularly suited for time series forecasting.
+# 📈 ME228 Final Project: Stock Price Prediction Using LSTM
+## 📝 Project Description
 
-Data Source
-Provider: Yahoo Finance
+This project implements a deep learning approach to predict stock prices using historical financial data obtained from Yahoo Finance. The focus is on **Apple Inc. (AAPL)** stock, and the model is built using a Long Short-Term Memory (LSTM) neural network, a type of recurrent neural network (RNN) particularly suited for time series forecasting.
 
-Access Method: yfinance Python library
+---
 
-Ticker Used: AAPL (Apple Inc.)
+## Data Source
 
-Date Range: 2015-01-01 to 2024-12-31
+- **Provider**: Yahoo Finance
+- **Access Method**: [`yfinance`](https://pypi.org/project/yfinance/) Python library
+- **Ticker Used**: `AAPL` (Apple Inc.)
+- **Date Range**: 2015-01-01 to 2024-12-31
 
-Technologies & Libraries
-Python
+---
 
-Jupyter Notebook
+## Technologies & Libraries
 
-NumPy
+- Python
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Matplotlib
+- yfinance
+- scikit-learn
+- TensorFlow / Keras
 
-Pandas
+---
 
-Matplotlib
+##  Model Overview
 
-yfinance
+- **Preprocessing**: Normalization using `MinMaxScaler`
+- **Model Type**: Sequential LSTM
+- **Target Variable**: Closing stock price
+- **Evaluation Metrics**:
+  - Mean Squared Error (MSE)
+  - Mean Absolute Error (MAE)
+  - R-squared Score (R²)
 
-scikit-learn
+---
 
-TensorFlow / Keras
+## How to Run
 
-Model Overview
-Preprocessing: Normalization using MinMaxScaler
+1. **Install dependencies** (if not already installed):
 
-Model Type: Sequential LSTM
+   ```bash
+   pip install yfinance pandas numpy matplotlib scikit-learn tensorflow
+   ```
 
-Target Variable: Closing stock price
+2. **Open the notebook**:
 
-Evaluation Metrics:
+   ```
+   projectma228.ipynb
+   ```
 
-Mean Squared Error (MSE)
+3. **Run all cells** to fetch data, preprocess it, train the model, and evaluate results.
 
-Mean Absolute Error (MAE)
+---
 
-R-squared Score (R²)
+##  Notes
 
- How to Run
-Install dependencies (if not already installed):
-
-bash
-Copy
-Edit
-pip install yfinance pandas numpy matplotlib scikit-learn tensorflow
-Open the notebook:
-
-Copy
-Edit
-projectma228.ipynb
-Run all cells to fetch data, preprocess it, train the model, and evaluate results.
-
-Notes
-The code and model were developed independently without any external templates.
-
-Make sure you are connected to the internet to fetch data using yfinance.
-
+- The code and model were developed independently without any external templates.
+- Make sure you are connected to the internet to fetch data using `yfinance`.
